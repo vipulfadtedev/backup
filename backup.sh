@@ -10,7 +10,6 @@ mkdir -p /mnt/vcdevs-nfs/img-backup/$current_date
 cd /mnt/vcdevs-nfs/img-backup/$current_date
 
 while read ip; do
-  echo '---------------------------------------------------------------------------------------------------'
   echo 'backup started for: '$ip
   LOOP_START=$(date +%s);
   host_to_backup=$user$ip
